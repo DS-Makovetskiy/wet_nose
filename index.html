@@ -52,11 +52,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build_002_01.loader.js";
+      var loaderUrl = buildUrl + "/Build_002_02.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build_002_01.data.unityweb",
-        frameworkUrl: buildUrl + "/Build_002_01.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build_002_01.wasm.unityweb",
+        dataUrl: buildUrl + "/Build_002_02.data.unityweb",
+        frameworkUrl: buildUrl + "/Build_002_02.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build_002_02.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ItSandboxNika",
@@ -103,7 +103,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 //fullscreenButton.onclick = () => {
-                //  unityInstance.SetFullscreen(1);
+                  //unityInstance.SetFullscreen(1);
                 //};
               }).catch((message) => {
                 alert(message);
@@ -112,13 +112,6 @@
 
       document.body.appendChild(script);
 
-    </script>
-
-    <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
-
-    <script>
-      // Отправляет событие инициализации нативному клиенту
-      vkBridge.send('VKWebAppInit');
     </script>
   </body>
 </html>
