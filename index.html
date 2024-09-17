@@ -52,11 +52,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build_002_02.loader.js";
+      var loaderUrl = buildUrl + "/Build_003.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build_002_02.data.unityweb",
-        frameworkUrl: buildUrl + "/Build_002_02.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build_002_02.wasm.unityweb",
+        dataUrl: buildUrl + "/Build_003.data.unityweb",
+        frameworkUrl: buildUrl + "/Build_003.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build_003.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ItSandboxNika",
@@ -103,7 +103,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 //fullscreenButton.onclick = () => {
-                  //unityInstance.SetFullscreen(1);
+                //  unityInstance.SetFullscreen(1);
                 //};
               }).catch((message) => {
                 alert(message);
